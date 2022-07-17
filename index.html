@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Assiment 7</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!-- <form action="" class="calculator" name="calc">
+        <input class="value" type="text" name="txt" readonly="">
+        <span class="num clear" onclick="document.calc.txt.value ='' ">c</span>
+        <span class="num" onclick="document.calc.txt.value +='/' ">/</span>
+        <span class="num" onclick="document.calc.txt.value +='*' ">X</span>
+        <span class="num" onclick="document.calc.txt.value +='7' ">7</span>
+        <span class="num" onclick="document.calc.txt.value +='8' ">8</span>  
+        <span class="num" onclick="document.calc.txt.value +='9' ">9</span>
+        <span class="num" onclick="document.calc.txt.value +='-' ">-</span>
+        <span class="num" onclick="document.calc.txt.value +='4' ">4</span>
+        <span class="num" onclick="document.calc.txt.value +='5' ">5</span>
+        <span class="num" onclick="document.calc.txt.value +='6' ">6</span>
+        <span class="num plus" onclick="document.calc.txt.value +='+' ">+</span>
+        <span class="num" onclick="document.calc.txt.value +='3' ">3</span>
+        <span class="num" onclick="document.calc.txt.value +='2' ">2</span>
+        <span class="num" onclick="document.calc.txt.value +='1' ">1</span>
+        <span class="num" onclick="document.calc.txt.value +='0' ">0</span>
+        <span class="num" onclick="document.calc.txt.value +='00' ">00</span>
+        <span class="num" onclick="document.calc.txt.value +='.' ">.</span>
+        <span class="num equal" onclick="document.calc.txt.value = eval(calc.txt.value) ">=</span>
+    
+    </form> -->
+
+    <!-- <br> -->
+
+    <!-- Calculator 2 -->
+
+
+    <!-- <div class="main">
+        <div class="hei">
+            <input class="result" type="text" id="inputResult">
+        </div>
+        <div class="img">
+            <img id="inputResult" onclick="backSpace()" src="https://cdn-icons-png.flaticon.com/512/3602/3602171.png"
+                alt="">
+        </div>
+        <hr>
+        <div class="hei">
+            <button class="btnC" onclick="clearResult('0')">C</button>
+            <button class="btn" onclick="getNumber('()')">()</button>
+            <button class="btn" onclick="getNumber('%')">%</button>
+            <button class="btn" onclick="getNumber('/')">/</button>
+        </div>
+        <div class="hei">
+            <button class="btnN" onclick="getNumber('7')">7</button>
+            <button class="btnN" onclick="getNumber('8')">8</button>
+            <button class="btnN" onclick="getNumber('9')">9</button>
+            <button class="btn" onclick="getNumber('*')">X</button>
+        </div>
+        <div class="hei">
+            <button class="btnN" onclick="getNumber('4')">4</button>
+            <button class="btnN" onclick="getNumber('5')">5</button>
+            <button class="btnN" onclick="getNumber('6')">6</button>
+            <button class="btn" onclick="getNumber('-')">-</button>
+        </div>
+        <div class="hei">
+            <button class="btnN" onclick="getNumber('1')">1</button>
+            <button class="btnN" onclick="getNumber('2')">2</button>
+            <button class="btnN" onclick="getNumber('3')">3</button>
+            <button class="btn" onclick="getNumber('+')">+</button>
+        </div>
+        <div class="hei">
+            <button class="btnN" onclick="getNumber('(-')">+/-</button>
+            <button class="btnN" onclick="getNumber('0')">0</button>
+            <button class="btnN" onclick="getNumber('.')">.</button>
+            <button class="btnequal" onclick="getResult('=')">=</button>
+        </div>
+    </div> -->
+
+
+
+
+
+    <!-- Calculator again-->
+
+
+    <div class="container">
+        <div class="inputDiv">
+            <input type="text" class="inputClass" name="" id="result">
+        </div>
+        <div class="backSpaceDiv">
+            <img class="img photo" id="img" onclick="backSpace()"
+                src="https://cdn-icons-png.flaticon.com/512/3602/3602171.png" alt="">
+        </div>
+        <div class="btnDiv">
+            <button class="btn cColor" onclick="clearInput()" id="">C</button>
+            <button class="btn color" onclick="getNum('(')" id="">()</button>
+            <button class="btn color" onclick="getNum('%')" id="">%</button>
+            <button class="btn color" onclick="getNum('/')" id="">/</button>
+        </div>
+        <div>
+            <button class="btn" onclick="getNum('7')" id="">7</button>
+            <button class="btn" onclick="getNum('8')" id="">8</button>
+            <button class="btn" onclick="getNum('9')" id="">9</button>
+            <button class="btn color" onclick="getNum('*')" id="">X</button>
+        </div>
+        <div>
+            <button class="btn" onclick="getNum('4')" id="">4</button>
+            <button class="btn" onclick="getNum('5')" id="">5</button>
+            <button class="btn" onclick="getNum('6')" id="">6</button>
+            <button class="btn color" onclick="getNum('-')" id="">-</button>
+        </div>
+        <div>
+            <button class="btn" onclick="getNum('1')" id="">1</button>
+            <button class="btn" onclick="getNum('2')" id="">2</button>
+            <button class="btn" onclick="getNum('3')" id="">3</button>
+            <button class="btn color" onclick="getNum('+')" id="">+</button>
+        </div>
+        <div>
+            <button class="btn" onclick="getNum('(-')" id="">+/-</button>
+            <button class="btn" onclick="getNum('0')" id="">0</button>
+            <button class="btn" onclick="getNum('.')" id="">.</button>
+            <button class="btn" onclick="equal('=')" id="equal">=</button>
+        </div>
+
+    </div>
+
+</body>
+<script src="app.js"></script>
+
+</html>
